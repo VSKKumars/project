@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh'mvn package'
+                sh 'mvn package'
             }
         }
         stage('Test') {
             steps {
-                'mvn test'
+               sh 'mvn test'
             }
         }
         stage('Deploy') {
