@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'java -jar target/*.jar 10 20'
+                sh 'mvn clean'
             }
         }
     }
