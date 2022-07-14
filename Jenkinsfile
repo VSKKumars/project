@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'wget'
+                sh 'java -jar target/*.jar 10 20'
             }
         }
     }
